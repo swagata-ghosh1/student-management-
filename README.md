@@ -6,7 +6,7 @@ A full-stack Student Management System built as a collaborative project.
 ##  Team
 
 - Backend: Swagata
-- Frontend: 
+- Frontend: Trishani
 
 ##  Tech Stack
 
