@@ -8,7 +8,7 @@ function AddStudent() {
   const [semester, setSemester] = useState("")
   const [address, setAddress] = useState("")
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) =>  {
   e.preventDefault()
   if (name === "") {
   alert("Please enter student name")
@@ -39,6 +39,27 @@ function AddStudent() {
   return
   }
 
+const response = await fetch("http://localhost:5000/api/students", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json"
+  },
+  body: JSON.stringify({
+    name,
+    rollNumber,
+    email,
+    phone,
+    department,
+    semester,
+    address
+  })
+})
+if (!response.ok) {
+  alert("Failed to add student")
+  return
+}
+
+alert("Student added successfully!")
 
   console.log({
     name,

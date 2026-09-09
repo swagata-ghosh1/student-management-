@@ -1,4 +1,21 @@
+import { useEffect, useState } from 'react'
+
 function Dashboard() {
+  const [totalStudents, setTotalStudents] = useState(0)
+const [totalDepartments, setTotalDepartments] = useState(0)
+  useEffect(() => {
+  fetch("http://localhost:5000/api/students")
+    .then((response) => response.json())
+    .then((data) => {
+  setTotalStudents(data.length)
+
+  const departments = new Set(
+    data.map((student) => student.department)
+  )
+
+  setTotalDepartments(departments.size)
+})
+}, [])
   return (
     <div className="dashboard">
 
@@ -19,7 +36,7 @@ function Dashboard() {
           <div className="card-icon">👨‍🎓</div>
           <div>
             <h3>Total Students</h3>
-            <p>0</p>
+           <p>{totalStudents}</p>
           </div>
         </div>
 
@@ -27,7 +44,7 @@ function Dashboard() {
           <div className="card-icon">🏫</div>
           <div>
             <h3>Departments</h3>
-            <p>0</p>
+           <p>{totalDepartments}</p>
           </div>
         </div>
 
@@ -35,7 +52,7 @@ function Dashboard() {
           <div className="card-icon">📚</div>
           <div>
             <h3>Active Students</h3>
-            <p>0</p>
+         <p>{totalStudents}</p>
           </div>
         </div>
 
