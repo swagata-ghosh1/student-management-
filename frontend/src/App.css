@@ -1,0 +1,270 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color:#f1f5f9;
+}
+
+nav {
+  background-color:   #172033;
+  color: white;
+  padding: 18px 30px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+nav h2 {
+  margin-right: auto;
+  color: white;
+  font-size: 22px;
+}
+
+nav button {
+  padding: 10px 16px;
+  border: 1px solid #dbe3f0;
+  border-radius: 6px;
+  cursor: pointer;
+  background-color: white;
+  color: #172033;
+  font-size: 14px;
+}
+
+main {
+  padding: 40px;
+  text-align: center;
+}
+input,
+textarea {
+  display: block;
+  width: 300px;
+  margin: 10px auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.form-container h2 {
+  margin-bottom: 25px;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+/* Dashboard */
+
+.dashboard {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.welcome-section {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: white;
+  border-radius: 16px;
+  padding: 35px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.20);
+}
+
+.welcome-section h1 {
+  margin: 0 0 10px 0;
+  color: white;
+  font-size: 32px;
+}
+
+.welcome-section p {
+  margin: 0;
+  color: #dbeafe;
+  font-size: 16px;
+}
+
+.dashboard-icon {
+  font-size: 50px;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.dashboard-card {
+  background-color: white;
+  border: none;
+  border-radius: 14px;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.08);
+  border-left: 5px solid #2563eb;
+}
+
+.card-icon {
+  font-size: 28px;
+  background-color: #eff6ff;
+  padding: 14px;
+  border-radius: 10px;
+}
+
+.dashboard-card h3 {
+  margin: 0 0 8px 0;
+  color: #6b7280;
+  font-size: 15px;
+  font-weight: normal;
+}
+
+.dashboard-card p {
+  margin: 0;
+  color: #1f2937;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.quick-section {
+  background-color: white;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  padding: 28px;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.05);
+}
+
+.quick-section h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #172033;
+  font-size: 21px;
+}
+
+.quick-actions {
+  display: flex;
+  gap: 15px;
+}
+
+.quick-actions button {
+  background-color: #2563eb;
+  color: white;
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 20px;
+  transition: 0.2s;
+}
+
+.quick-actions button:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.quick-actions button:nth-child(2) {
+  background-color: #eff6ff;
+  color: #2563eb;
+}
+
+.quick-actions button:nth-child(2):hover {
+  background-color: #dbeafe;
+}
+.active-nav {
+  background-color: #2563eb !important;
+  color: white !important;
+  border-color: #2563eb !important;
+  font-weight: 600;
+}
+/* Student Table */
+
+.student-list {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.student-list h2 {
+  color: #172033;
+  margin-bottom: 25px;
+}
+
+.student-table-container {
+  background-color: white;
+  border-radius: 14px;
+  padding: 20px;
+  overflow-x: auto;
+  box-shadow: 0 4px 15px rgba(15, 23, 42, 0.08);
+}
+
+.student-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.student-table th {
+  background-color: #2563eb;
+  color: white;
+  padding: 14px;
+  font-size: 14px;
+}
+
+.student-table td {
+  padding: 14px;
+  border-bottom: 1px solid #e2e8f0;
+  color: #334155;
+  font-size: 14px;
+}
+
+.student-table tbody tr:hover {
+  background-color: #f8fafc;
+}
+
+.student-table button {
+  margin: 2px;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.student-table button:first-child {
+  background-color: #eff6ff;
+  color: #2563eb;
+}
+
+.student-table button:last-child {
+  background-color: #fee2e2;
+  color: #dc2626;
+}
