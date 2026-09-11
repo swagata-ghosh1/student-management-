@@ -1,10 +1,6 @@
 import { useEffect, useState } from 'react'
 
-<<<<<<< HEAD
 function Dashboard({ setPage }) {
-=======
-function Dashboard() {
->>>>>>> origin/frontend
   const [totalStudents, setTotalStudents] = useState(0)
 const [totalDepartments, setTotalDepartments] = useState(0)
   useEffect(() => {
@@ -66,7 +62,6 @@ const [totalDepartments, setTotalDepartments] = useState(0)
         <h2>Quick Actions</h2>
 
         <div className="quick-actions">
-<<<<<<< HEAD
           <button onClick={() => setPage("addStudent")}>
   Add New Student
 </button>
@@ -74,10 +69,6 @@ const [totalDepartments, setTotalDepartments] = useState(0)
 <button onClick={() => setPage("students")}>
   View Students
 </button>
-=======
-          <button>Add New Student</button>
-          <button>View Students</button>
->>>>>>> origin/frontend
         </div>
       </div>
 

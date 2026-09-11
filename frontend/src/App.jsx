@@ -31,11 +31,7 @@ function App() {
         </nav>
       <main>
         
-<<<<<<< HEAD
        {page === "dashboard" && <Dashboard setPage={setPage} />}
-=======
-       {page === "dashboard" && <Dashboard />}
->>>>>>> origin/frontend
 
         {page === "students" && <StudentList />}
 
